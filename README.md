@@ -1,152 +1,123 @@
-# Web Development Portfolio
+# Web Development Portfolio — 5 Production Websites
 
-> Production websites built and deployed for real clients across multiple industries. Every project built from scratch using modern web technologies.
-
-![SvelteKit](https://img.shields.io/badge/SvelteKit-2-FF3E00)
-![Svelte](https://img.shields.io/badge/Svelte-5-FF3E00)
-![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4)
-![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000)
+> All websites designed and developed solo using **SvelteKit 2, Svelte 5, TypeScript, and Tailwind CSS 4**
 
 ---
 
-## Projects
+## 1. onurhaniffa.com — Personal Portfolio
 
-### 1. onurhaniffa.com — Personal Portfolio & Freelance Business
+> **Live:** [onurhaniffa.com](https://onurhaniffa.com) | **Source:** [github.com/OnurHaniffa/my-website](https://github.com/OnurHaniffa/my-website) (Public)
 
-![onurhaniffa.com](assets/my-website-hero.png)
+![Onur Haniffa Portfolio](assets/portfolio-homepage.png)
 
-**Live:** [onurhaniffa.com](https://onurhaniffa.com) · **Source:** [GitHub (Public)](https://github.com/OnurHaniffa/my-website)
-
-My personal portfolio and freelance business website. Not a template — built from scratch with custom components, animations, and a headless CMS integration.
+Personal developer portfolio showcasing projects and services with a premium, conversion-focused design.
 
 **Key Features:**
-- Custom SVG speedometer/gauge UI on the services page with clickable arc segments, gradient fills, and curved text
-- 10 different showcase component variants (browser window, bento grid, live-demo iframe, 3D isometric, magazine editorial, etc.)
-- Headless CMS (Directus 11) with graceful fallback to hardcoded data when unavailable
-- Full internationalization (English + Turkish) with URL-based locale routing and hreflang tags
-- Production contact form with Resend API, rate limiting (3 req/min), honeypot spam prevention, XSS sanitization
-- Motion One + GSAP animation system with `prefers-reduced-motion` support
-- Dark/light theme with OKLCH color system and Material Design elevation surfaces
-- JSON-LD structured data (ProfessionalService, LocalBusiness, FAQPage, BreadcrumbList)
-- Playwright performance tests (FCP, FPS, lazy-loading coverage)
-
-**Tech:** SvelteKit 2 · Svelte 5 · TypeScript · Tailwind CSS 4 · Directus CMS · Motion One · GSAP · Resend · Vercel
+- Custom SVG speedometer/gauge UI with clickable arc segments and curved text
+- 10 different showcase component variants for portfolio display
+- Directus 11 headless CMS with graceful fallback to static data
+- Full English/Turkish internationalization with hreflang and bilingual sitemap
+- Contact form with rate limiting, honeypot, XSS sanitization
+- Motion One + GSAP animations with prefers-reduced-motion support
+- OKLCH dark/light theme system
+- Playwright performance tests
+- **Ivory AI chatbot widget integrated** (see Ivory AI showcase)
 
 ---
 
-### 2. Designs By Joe — Client Portfolio for Digital Illustrator
+## 2. designsbyjoe.net — Digital Illustrator Portfolio (Client)
 
-![designsbyjoe.net](assets/designs-by-joe.png)
+> **Live:** [designsbyjoe.net](https://designsbyjoe.net) | **Source:** Private (Client)
 
-**Live:** [designsbyjoe.net](https://designs-by-joe-website.vercel.app)
+![Designs By Joe Homepage](assets/designsbyjoe-homepage.png)
 
-Professional portfolio and commission request platform for a digital illustrator specializing in fan art enamel pin designs across Star Wars, Disney, Marvel, and "Adorbs" collections.
+![Designs By Joe Gallery](assets/designsbyjoe-gallery.png)
+
+Commission request platform for a professional digital illustrator specializing in fan art pin designs.
 
 **Key Features:**
-- Artwork gallery with category filtering via URL query parameters and bento-style responsive grid
-- Full-screen lightbox with keyboard navigation (arrow keys), touch swipe support, and image preloading
-- Commission request form with Zod schema validation, sveltekit-superforms, and Resend email delivery
-- Multi-layered image protection system (overlay, right-click block, keyboard shortcut block, blur on window unfocus)
-- Custom image optimization pipeline using Sharp (PNG→WebP, thumbnails at 400px, full at 1500px)
-- Dark mode with oklch color palette
-- Comprehensive Playwright test suite (7 test files covering 5 device sizes)
-- PWA manifest for installability
-
-**Tech:** SvelteKit 2 · Svelte 5 · TypeScript · Tailwind CSS 4 · shadcn-svelte · sveltekit-superforms · Zod · Sharp · Resend · Vercel
+- Commission request form with Zod validation + sveltekit-superforms + Resend email
+- Image gallery with lightbox (keyboard navigation, touch swipe, preloading)
+- Multi-layered image protection (overlay, right-click block, blur on unfocus)
+- Custom Sharp-based image optimization pipeline (PNG to WebP)
+- 7 Playwright test files covering 5 device sizes
+- Star Wars, Disney, Marvel, and Adorbs art collections
 
 ---
 
-### 3. Pearl Dental Studio — Dental Clinic Website Template
+## 3. Pearl Dental Studio — Dental Clinic Template
 
-![Pearl Dental Studio](assets/dentist-template.png)
+> **Live:** [dentist-template-seven.vercel.app](https://dentist-template-seven.vercel.app) | **Source:** [github.com/OnurHaniffa/dentist-template](https://github.com/OnurHaniffa/dentist-template) (Public)
 
-**Live:** [Demo](https://dentist-template-seven.vercel.app) · **Source:** [GitHub (Public)](https://github.com/OnurHaniffa/dentist-template)
+![Pearl Dental Hero](assets/dentist-hero.png)
 
-Production-ready dental clinic website template with appointment booking, service listings, team profiles, reviews, and transparent pricing.
+![Pearl Dental Services](assets/dentist-services.png)
+
+A production-ready dental clinic template with 7 pages, booking system, and full accessibility compliance.
 
 **Key Features:**
 - 7 pages: Home, Services, Pricing, Team, Reviews, Contact, Booking
-- Full booking form with client-side validation, loading/success states, service selection with price hints
-- Page transitions using the View Transitions API with graceful degradation
-- Scroll-triggered fade-in animations via IntersectionObserver with `prefers-reduced-motion` support
-- Button component: 4 variants, 3 sizes, icon slots, loading state, polymorphic rendering (`<a>` or `<button>`)
-- WCAG AA accessibility: skip link, semantic HTML, proper heading hierarchy, ARIA roles, keyboard navigation, focus indicators
-- JSON-LD `Dentist` schema with services, hours, geo coordinates, aggregate rating
-- Programmatic sitemap.xml and robots.txt
-
-**Tech:** SvelteKit 2 · Svelte 5 · TypeScript · Tailwind CSS 4 · oklch colors · Vite 7 · Vercel
+- View Transitions API with graceful degradation
+- WCAG AA: skip link, semantic HTML, ARIA roles, keyboard navigation, focus indicators
+- JSON-LD Dentist schema with services, hours, and coordinates
+- WhatsApp integration button
+- Patient reviews and testimonials section
+- Newsletter signup with email validation
 
 ---
 
-### 4. ILTAS Machinery — Bilingual Corporate Site
+## 4. iltasmakine.com — Agricultural Equipment Company (Client)
 
-![ILTAS](assets/iltas-website.png)
+> **Live:** [iltasmakine.com](https://iltasmakine.com) | **Source:** Private (Client)
 
-**Live:** [iltasmakine.com](https://iltas-website.vercel.app)
+![ILTAS Machinery Homepage](assets/iltas-homepage.png)
 
-Bilingual (Turkish/English) corporate website for an agricultural machinery company specializing in fruit and vegetable grading systems.
+Full bilingual website for an agricultural fruit & vegetable sorting machinery company.
 
 **Key Features:**
-- Full internationalization with separate route trees (`/` Turkish, `/en` English), hreflang alternate links
-- Server-side contact form with robust validation (phone format, gibberish detection, word count, name validation)
-- Animated statistics counters using `requestAnimationFrame` with cubic ease-out easing
-- Scroll-triggered section animations with IntersectionObserver
-- Iterative SEO debugging for real Google Search Console issues (soft 404s, duplicate content, redirect chains)
-- Beautifully templated HTML emails via Resend API
-
-**Tech:** SvelteKit 2 · Svelte 5 · TypeScript · Tailwind CSS 4 · bits-ui · Resend · Vercel
+- Full Turkish/English bilingual site with separate route trees (/en/*)
+- Contact form with Turkish phone validation and gibberish detection
+- SEO debugging for real Google Search Console indexing issues
+- Animated statistics counters (30+ projects, 6+ references) with requestAnimationFrame
+- Project portfolio with image galleries
+- Client trust bar with reference companies
 
 ---
 
-### 5. Sistem Kentsel Donusum — Urban Transformation Consulting
+## 5. sistemkentseldonusum.com — Urban Transformation Consulting (Client)
 
-![Sistem Kentsel Donusum](assets/sistem-kentsel.png)
+> **Live:** [sistemkentseldonusum.com](https://sistemkentseldonusum.com) | **Source:** Private (Client)
 
-**Live:** [sistemkentseldonusum.com](https://sistem-kentsel-donusum.vercel.app)
+![Sistem Kentsel Donusum Homepage](assets/sistem-homepage.png)
 
-10-page corporate website for an urban transformation consulting company in Turkey, complete with legal compliance pages and print marketing collateral.
+A 10-page website for an urban transformation consulting firm with KVKK (Turkish GDPR) compliance.
 
 **Key Features:**
-- Custom animation framework (Svelte action) with 8 animation types, configurable delay/duration/threshold, and stagger utility
-- 10 pages including KVKK (Turkish GDPR), Privacy Policy, Terms of Use — full regulatory compliance
-- REST-style contact API with XSS prevention via HTML escaping
-- Print brochure generation pipeline (HTML→PDF via Puppeteer)
-- Reusable SEO component accepting title, description, canonical, ogImage, ogType, noindex props
-- WhatsApp integration with pre-filled Turkish messages
-- shadcn-svelte components (accordion, badge, button, card, input, textarea, sonner)
-
-**Tech:** SvelteKit 2 · Svelte 5 · TypeScript · Tailwind CSS 4 · shadcn-svelte · Puppeteer · Resend · Vercel
+- 10 pages including KVKK (Turkish GDPR) compliance page
+- Custom animation framework (Svelte action) with 8 animation types
+- Contact API with XSS prevention
+- WhatsApp business integration
+- Service detail pages for legal support, architectural support, valuation, and process management
+- Team profiles and FAQ section
 
 ---
 
 ## Common Tech Stack
 
-Every project shares a modern, consistent technology foundation:
+All 5 websites share a modern, production-grade tech stack:
 
-| Layer | Technology |
-|---|---|
-| **Framework** | SvelteKit 2 with Svelte 5 (latest runes syntax) |
-| **Language** | TypeScript (strict mode) |
-| **Styling** | Tailwind CSS 4 with oklch perceptual color system |
-| **Email** | Resend API |
-| **Deployment** | Vercel |
-| **SEO** | JSON-LD structured data, Open Graph, Twitter Cards, programmatic sitemaps |
-| **Accessibility** | WCAG AA, semantic HTML, keyboard navigation, reduced-motion support |
+| Technology | Purpose |
+|-----------|---------|
+| SvelteKit 2 | Full-stack framework |
+| Svelte 5 | Latest runes/signals API |
+| TypeScript | Strict mode across all projects |
+| Tailwind CSS 4 | Utility-first styling |
+| Resend API | Transactional emails |
+| Vercel | Deployment & hosting |
+| JSON-LD | Structured data for SEO |
+| WCAG AA | Accessibility compliance |
 
----
+## Built By
 
-## Development Approach
-
-- **No templates** — Every site designed and built from scratch
-- **Mobile-first** — Responsive across all device sizes
-- **Performance-first** — Lazy loading, optimized images, minimal JavaScript
-- **Security-conscious** — XSS prevention, input validation, secure environment variables
-- **SEO-optimized** — Structured data, canonical URLs, sitemaps, meta tags
-- **Accessibility-compliant** — WCAG AA, keyboard navigation, ARIA roles
-
----
-
-## Contact
-
-**Onur Haniffa** — [onurhaniffa.com](https://onurhaniffa.com) · [LinkedIn](https://www.linkedin.com/in/onurhaniffa/)
+**Onur Haniffa** — Full-Stack Developer & ML Engineer
+[Portfolio](https://onurhaniffa.com) · [LinkedIn](https://linkedin.com/in/onurhaniffa) · [GitHub](https://github.com/OnurHaniffa)
